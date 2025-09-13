@@ -28,4 +28,14 @@ export default function Contact() {
       </div>
     </div>
   );
+}import Footer from "./components/Footer";
+
+export default function Home() {
+  return (
+    <div>
+      {/* conteúdo da Home */}
+      
+      <Footer />
+    </div>
+  );
 }
