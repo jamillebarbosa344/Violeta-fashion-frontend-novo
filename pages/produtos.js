@@ -30,3 +30,4 @@ const produtos = [
     image: "/produtos/IMG_3929.jpg",
   },
 ];
+export default produtos;
