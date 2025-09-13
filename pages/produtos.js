@@ -1,5 +1,5 @@
 import Footer from "./components/Footer";
-import "./produtos.css";
+import styles from "./produtos.module.css";
 
 export default function Produtos() {
   const produtos = [
@@ -32,9 +32,9 @@ export default function Produtos() {
   return (
     <>
       <h1 style={{ textAlign: "center", marginTop: "20px" }}>✨ Nossos Produtos ✨</h1>
-      <div className="produtos-container">
+      <div className={styles.container}>
         {produtos.map((item) => (
-          <div key={item.id} className="produto-card">
+          <div key={item.id} className={styles.card}>
             <img src={item.imagem} alt={item.nome} />
             <h3>{item.nome}</h3>
             <p>{item.preco}</p>
