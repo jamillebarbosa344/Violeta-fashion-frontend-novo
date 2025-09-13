@@ -29,39 +29,30 @@ export default function Produtos() {
               <img src={p.imagem} alt={p.nome} style={{ width: "100%", borderRadius: "8px" }} />
               <h3>{p.nome}</h3>
               <p style={{ color: "purple", fontWeight: "bold" }}>R$ {p.preco.toFixed(2).replace(".", ",")}</p>
-              <button style={{
-                background: "purple",
-                color: "white",
-                border: "none",
-                borderRadius: "6px",
-                padding: "10px 15px",
-                cursor: "pointer"
-              }}>
+              <button
+                style={{
+                  background: "purple",
+                  color: "white",
+                  border: "none",
+                  borderRadius: "6px",
+                  padding: "10px 15px",
+                  cursor: "pointer"
+                }}
+                onClick={() => {
+                  let cart = JSON.parse(localStorage.getItem("carrinho") || "[]");
+                  const found = cart.find((item) => item.id === p.id);
+                  if (found) {
+                    found.quantidade += 1;
+                  } else {
+                    cart.push({ ...p, quantidade: 1 });
+                  }
+                  localStorage.setItem("carrinho", JSON.stringify(cart));
+                  alert(`${p.nome} foi adicionado ao carrinho!`);
+                }}
+              >
                 Adicionar ao carrinho
               </button>
-            </div><button
-  style={{
-    background: "purple",
-    color: "white",
-    border: "none",
-    borderRadius: "6px",
-    padding: "10px 15px",
-    cursor: "pointer"
-  }}
-  onClick={() => {
-    let cart = JSON.parse(localStorage.getItem("carrinho") || "[]");
-    const found = cart.find((item) => item.id === p.id);
-    if (found) {
-      found.quantidade += 1;
-    } else {
-      cart.push({ ...p, quantidade: 1 });
-    }
-    localStorage.setItem("carrinho", JSON.stringify(cart));
-    alert(`${p.nome} foi adicionado ao carrinho!`);
-  }}
->
-  Adicionar ao carrinho
-</button>
+            </div>
           ))}
         </div>
       </div>
