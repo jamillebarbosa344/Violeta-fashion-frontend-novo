@@ -17,7 +17,7 @@ export default function Checkout() {
   const finalizarCompra = () => {
     alert("✅ Compra finalizada com sucesso!\nEm breve você receberá mais informações.");
     localStorage.removeItem("carrinho"); // limpa o carrinho
-    window.location.href = "/"; // volta para a home
+    window.location.href = "/"; // redireciona para a Home
   };
 
   return (
@@ -32,7 +32,7 @@ export default function Checkout() {
             <h3>Resumo da Compra:</h3>
             <ul>
               {items.map((item, i) => (
-                <li key={i}>
+                <li key={i} style={{ marginBottom: "8px" }}>
                   {item.nome} x {item.quantidade} —{" "}
                   <strong>R$ {(item.preco * item.quantidade).toFixed(2).replace(".", ",")}</strong>
                 </li>
