@@ -50,5 +50,15 @@ export default function Cart() {
         )}
       </div>
     </div>
+  );import Footer from "./components/Footer";
+
+export default function Home() {
+  return (
+    <div>
+      {/* conteúdo da Home */}
+      
+      <Footer />
+    </div>
   );
+}
 }
