@@ -1,10 +1,11 @@
-import Layout from "./components/Layout";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <Layout>
-      <h2>Bem-vinda à Loja Violeta Fashion 🌸</h2>
+    <>
+      <h1>Bem-vinda à Loja Violeta Fashion 🌸</h1>
       <p>As melhores roupas femininas com estilo e elegância.</p>
-    </Layout>
+      <Footer />
+    </>
   );
 }
