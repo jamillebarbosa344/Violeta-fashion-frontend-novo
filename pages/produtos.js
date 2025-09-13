@@ -34,14 +34,21 @@ export default function Produtos() {
   ];
 
   return (
-    <div>
-      {produtos.map((produto) => (
-        <div key={produto.id}>
-          <h2>{produto.nome}</h2>
-          <p>{produto.preco}</p>
-          <img src={produto.image} alt={produto.nome} width="200" />
-        </div>
-      ))}
+    <div style={{ padding: "20px" }}>
+      <h1>Nossos Produtos</h1>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
+        {produtos.map((produto) => (
+          <div key={produto.id} style={{ border: "1px solid #ccc", borderRadius: "8px", padding: "10px", textAlign: "center" }}>
+            <img 
+              src={produto.image} 
+              alt={produto.nome} 
+              style={{ width: "100%", height: "auto", borderRadius: "5px" }} 
+            />
+            <h2>{produto.nome}</h2>
+            <p>{produto.preco}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
