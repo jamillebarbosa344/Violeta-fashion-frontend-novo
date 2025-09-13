@@ -1,11 +1,10 @@
-import Footer from "./components/Footer";
+import Layout from '../components/Layout'
 
 export default function Cart() {
   return (
-    <>
-      <h1>Carrinho de Compras</h1>
-      <p>Seus itens selecionados aparecerão aqui.</p>
-      <Footer />
-    </>
-  );
+    <Layout>
+      <h1>Carrinho</h1>
+      <p>Aqui estão os produtos que você adicionou.</p>
+    </Layout>
+  )
 }
