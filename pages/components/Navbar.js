@@ -1,19 +1,17 @@
 import Link from "next/link";
+import "./Navbar.css"; // vamos criar esse css já já
 
 export default function Navbar() {
   return (
-    <nav style={{
-      display: "flex",
-      justifyContent: "center",
-      gap: "20px",
-      padding: "15px",
-      backgroundColor: "#800080",
-      color: "white",
-      fontSize: "18px"
-    }}>
-      <Link href="/">Home</Link>
-      <Link href="/about">Sobre</Link>
-      <Link href="/contact">Contato</Link>
+    <nav className="navbar">
+      <div className="logo">Violeta Fashion</div>
+      <ul className="nav-links">
+        <li><Link href="/">Início</Link></li>
+        <li><Link href="/about">Sobre</Link></li>
+        <li><Link href="/produtos">Produtos</Link></li>
+        <li><Link href="/contact">Contato</Link></li>
+        <li><Link href="/cart">Carrinho</Link></li>
+      </ul>
     </nav>
   );
 }
