@@ -1,0 +1,75 @@
+// pages/produtos.js
+export default function Produtos() {
+  const produtos = [
+    {
+      id: 1,
+      nome: "Conjunto Floral",
+      preco: "R$ 199,90",
+      image: "/produtos/IMG_3925.jpeg",
+    },
+    {
+      id: 2,
+      nome: "Vestido Azul Elegante",
+      preco: "R$ 249,90",
+      image: "/produtos/IMG_3926.jpeg",
+    },
+    {
+      id: 3,
+      nome: "Bolsa Branca Clássica",
+      preco: "R$ 159,90",
+      image: "/produtos/IMG_3927.jpeg",
+    },
+    {
+      id: 4,
+      nome: "Sandália Fashion",
+      preco: "R$ 179,90",
+      image: "/produtos/IMG_3928.jpeg",
+    },
+    {
+      id: 5,
+      nome: "Saia Estampada",
+      preco: "R$ 139,90",
+      image: "/produtos/IMG_3929.jpeg",
+    },
+    {
+      id: 6,
+      nome: "Kit Acessórios Femininos",
+      preco: "R$ 89,90",
+      image: "/produtos/IMG_3930.jpeg", // você pode adicionar essa ou repetir outra
+    },
+  ];
+
+  return (
+    <div style={{ padding: "20px" }}>
+      <h1>Nossos Produtos</h1>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+          gap: "20px",
+          marginTop: "20px",
+        }}
+      >
+        {produtos.map((produto) => (
+          <div
+            key={produto.id}
+            style={{
+              border: "1px solid #ddd",
+              borderRadius: "8px",
+              padding: "10px",
+              textAlign: "center",
+            }}
+          >
+            <img
+              src={produto.image}
+              alt={produto.nome}
+              style={{ width: "100%", borderRadius: "8px" }}
+            />
+            <h3>{produto.nome}</h3>
+            <p>{produto.preco}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
