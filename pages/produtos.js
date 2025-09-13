@@ -1,47 +1,47 @@
 // pages/produtos.js
-import styles from './produtos.module.css';
-
-const produtos = [
-  {
-    id: 1,
-    nome: "Vestido Floral",
-    preco: "R$ 120,00",
-    imagem: "https://source.unsplash.com/400x400/?dress,fashion"
-  },
-  {
-    id: 2,
-    nome: "Bolsa Elegante",
-    preco: "R$ 200,00",
-    imagem: "https://source.unsplash.com/400x400/?bag,fashion"
-  },
-  {
-    id: 3,
-    nome: "Sapato Feminino",
-    preco: "R$ 150,00",
-    imagem: "https://source.unsplash.com/400x400/?shoes,fashion"
-  },
-  {
-    id: 4,
-    nome: "Blusa Estilosa",
-    preco: "R$ 90,00",
-    imagem: "https://source.unsplash.com/400x400/?blouse,fashion"
-  }
-];
-
 export default function Produtos() {
+  const produtos = [
+    {
+      id: 1,
+      nome: "Conjunto Floral",
+      preco: "R$ 199,90",
+      image: "/produtos/IMG_3925.jpg",
+    },
+    {
+      id: 2,
+      nome: "Vestido Azul Elegante",
+      preco: "R$ 249,90",
+      image: "/produtos/IMG_3926.jpg",
+    },
+    {
+      id: 3,
+      nome: "Bolsa Branca Clássica",
+      preco: "R$ 159,90",
+      image: "/produtos/IMG_3927.jpg",
+    },
+    {
+      id: 4,
+      nome: "Sandália Fashion",
+      preco: "R$ 179,90",
+      image: "/produtos/IMG_3928.jpg",
+    },
+    {
+      id: 5,
+      nome: "Blusa Estilo Verão",
+      preco: "R$ 129,90",
+      image: "/produtos/IMG_3929.jpg",
+    },
+  ];
+
   return (
-    <div className={styles.container}>
-      <h1 className={styles.titulo}>Nossos Produtos</h1>
-      <div className={styles.grid}>
-        {produtos.map((produto) => (
-          <div key={produto.id} className={styles.card}>
-            <img src={produto.imagem} alt={produto.nome} className={styles.imagem} />
-            <h2>{produto.nome}</h2>
-            <p>{produto.preco}</p>
-            <button className={styles.botao}>Adicionar ao Carrinho</button>
-          </div>
-        ))}
-      </div>
+    <div>
+      {produtos.map((produto) => (
+        <div key={produto.id}>
+          <h2>{produto.nome}</h2>
+          <p>{produto.preco}</p>
+          <img src={produto.image} alt={produto.nome} width="200" />
+        </div>
+      ))}
     </div>
   );
 }
