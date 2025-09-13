@@ -1,27 +1,13 @@
-import Navbar from "../components/Navbar";
+import Layout from "./components/Layout";
 
 export default function About() {
   return (
-    <div>
-      <Navbar />
-      <div style={{ textAlign: "center", padding: "50px" }}>
-        <h1>Sobre a Violeta Fashion 🌸</h1>
-        <p>
-          Somos uma loja de moda feminina dedicada a trazer estilo, elegância e
-          confiança para cada cliente.
-        </p>
-      </div>
-    </div>
-  );
-}
-import Footer from "./components/Footer";
-
-export default function Home() {
-  return (
-    <div>
-      {/* conteúdo da Home */}
-      
-      <Footer />
-    </div>
+    <Layout>
+      <h2>Sobre Nós</h2>
+      <p>
+        A <strong>Violeta Fashion</strong> nasceu com o propósito de trazer estilo, 
+        elegância e modernidade para o guarda-roupa feminino.
+      </p>
+    </Layout>
   );
 }
