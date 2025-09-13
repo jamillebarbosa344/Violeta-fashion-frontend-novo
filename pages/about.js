@@ -1,13 +1,14 @@
-import Layout from "./components/Layout";
+import Footer from "./components/Footer";
 
 export default function About() {
   return (
-    <Layout>
-      <h2>Sobre Nós</h2>
+    <>
+      <h1>Sobre Nós</h1>
       <p>
-        A <strong>Violeta Fashion</strong> nasceu com o propósito de trazer estilo, 
-        elegância e modernidade para o guarda-roupa feminino.
+        A Violeta Fashion nasceu para trazer moda feminina acessível, elegante e
+        com um toque de exclusividade.
       </p>
-    </Layout>
+      <Footer />
+    </>
   );
 }
