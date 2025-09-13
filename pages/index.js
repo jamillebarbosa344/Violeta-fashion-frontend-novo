@@ -1,10 +1,10 @@
-import Layout from '../components/Layout';
+import Layout from '../components/Layout'
 
 export default function Home() {
   return (
     <Layout>
-      <h1>Bem-vindo à Violeta Fashion!</h1>
-      <p>Sua loja de moda com estilo e elegância.</p>
+      <h1>Página Inicial</h1>
+      <p>Bem-vindo à Violeta Fashion!</p>
     </Layout>
-  );
+  )
 }
