@@ -33,14 +33,17 @@ export default function Cart() {
               ))}
             </ul>
             <h3>Total: R$ {total.toFixed(2).replace(".", ",")}</h3>
-            <button style={{
-              background: "green",
-              color: "white",
-              border: "none",
-              borderRadius: "6px",
-              padding: "12px 16px",
-              cursor: "pointer"
-            }}>
+            <button
+              style={{
+                background: "green",
+                color: "white",
+                border: "none",
+                borderRadius: "6px",
+                padding: "12px 16px",
+                cursor: "pointer"
+              }}
+              onClick={() => window.location.href = "/checkout"}
+            >
               Finalizar Compra
             </button>
           </>
