@@ -14,3 +14,14 @@ export default function About() {
     </div>
   );
 }
+import Footer from "./components/Footer";
+
+export default function Home() {
+  return (
+    <div>
+      {/* conteúdo da Home */}
+      
+      <Footer />
+    </div>
+  );
+}
