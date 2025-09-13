@@ -29,6 +29,17 @@ export default function Checkout() {
           <p>Seu carrinho está vazio.</p>
         ) : (
           <>
+          import Footer from "./components/Footer";
+
+export default function Home() {
+  return (
+    <div>
+      {/* conteúdo da Home */}
+      
+      <Footer />
+    </div>
+  );
+}
             <h3>Resumo da Compra:</h3>
             <ul>
               {items.map((item, i) => (
