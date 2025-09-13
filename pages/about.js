@@ -1,10 +1,10 @@
-import Layout from '../components/Layout'
+import Layout from '../components/Layout';
 
 export default function About() {
   return (
     <Layout>
       <h1>Sobre Nós</h1>
-      <p>Informações sobre a loja Violeta Fashion.</p>
+      <p>Aqui você pode falar sobre a loja Violeta Fashion.</p>
     </Layout>
-  )
+  );
 }
