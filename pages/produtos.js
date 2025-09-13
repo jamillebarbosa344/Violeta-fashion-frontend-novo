@@ -19,15 +19,10 @@ const produtos = [
   },
   {
     id: 4,
-    nome: "Sandália Fashion",
-    preco: "R$ 179,90",
+    nome: "Sandália Nude Confort",
+    preco: "R$ 139,90",
     image: "/produtos/IMG_3928.jpg",
   },
-  {
-    id: 5,
-    nome: "Blusa Estilo Verão",
-    preco: "R$ 129,90",
-    image: "/produtos/IMG_3929.jpg",
-  },
 ];
+
 export default produtos;
