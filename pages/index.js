@@ -1,15 +1,13 @@
+import Navbar from "../components/Navbar";
+
 export default function Home() {
   return (
-    <div style={{ 
-      display: "flex", 
-      justifyContent: "center", 
-      alignItems: "center", 
-      height: "100vh", 
-      backgroundColor: "#f5f0fa" 
-    }}>
-      <h1 style={{ color: "#6a0dad", fontFamily: "Arial, sans-serif" }}>
-        Bem-vinda à Loja Violeta Fashion 🌸
-      </h1>
+    <div>
+      <Navbar />
+      <div style={{ textAlign: "center", padding: "50px" }}>
+        <h1>Bem-vinda à Loja Violeta Fashion 🌸</h1>
+        <p>Explore nossas coleções e descubra o melhor da moda feminina.</p>
+      </div>
     </div>
   );
 }
