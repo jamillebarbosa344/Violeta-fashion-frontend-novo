@@ -1,11 +1,12 @@
-import Layout from "./components/Layout";
+import Footer from "./components/Footer";
 
 export default function Contact() {
   return (
-    <Layout>
-      <h2>Contato</h2>
+    <>
+      <h1>Contato</h1>
       <p>Email: contato@violetafashion.com</p>
-      <p>WhatsApp: (11) 99999-9999</p>
-    </Layout>
+      <p>Telefone: (11) 99999-9999</p>
+      <Footer />
+    </>
   );
 }
