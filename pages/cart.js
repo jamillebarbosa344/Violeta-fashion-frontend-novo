@@ -1,10 +1,10 @@
 import Footer from '../components/Footer';
 
-export default function About() {
+export default function Cart() {
   return (
     <>
-      <h1>Sobre Nós</h1>
-      <p>Aqui você pode falar sobre a loja Violeta Fashion.</p>
+      <h1>Carrinho</h1>
+      <p>Aqui ficam os produtos adicionados ao carrinho.</p>
       <Footer />
     </>
   );
