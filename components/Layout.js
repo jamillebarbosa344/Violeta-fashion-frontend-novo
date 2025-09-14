@@ -1,10 +1,13 @@
+import Header from './Header';
 import Footer from './Footer';
 
 export default function Layout({ children }) {
   return (
     <div>
-      {/* Aqui você pode colocar um Header se quiser */}
-      <main>{children}</main>
+      <Header />
+      <main style={{ minHeight: '70vh', padding: '20px' }}>
+        {children}
+      </main>
       <Footer />
     </div>
   );
