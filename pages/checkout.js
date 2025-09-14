@@ -1,11 +1,10 @@
-import Footer from '../components/Footer';
+import Layout from '../components/Layout';
 
-export default function Checkout() {
+export default function Contact() {
   return (
-    <>
-      <h1>Finalizar Compra</h1>
-      <p>Aqui você pode finalizar a compra dos seus produtos.</p>
-      <Footer />
-    </>
+    <Layout>
+      <h1>Contato</h1>
+      <p>Aqui você pode colocar informações de contato.</p>
+    </Layout>
   );
 }
