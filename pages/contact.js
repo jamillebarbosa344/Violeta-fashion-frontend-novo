@@ -2,9 +2,10 @@ import Footer from '../components/Footer';
 
 export default function Contact() {
   return (
-    <Layout>
+    <>
       <h1>Contato</h1>
-      <p>Fale com a gente pelo formulário ou redes sociais.</p>
-    </Layout>
+      <p>Aqui você pode colocar informações de contato da loja.</p>
+      <Footer />
+    </>
   );
 }
