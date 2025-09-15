@@ -1,8 +1,10 @@
-// components/footer.js
+/ components/Footer.js
+import './Footer.css';
+
 export default function Footer() {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} VIOLETA FASHION. TODOS OS DIREITOS RESERVADOS.</p>
+      <p>© {new Date().getFullYear()} Violeta Fashion</p>
     </footer>
   );
 }
