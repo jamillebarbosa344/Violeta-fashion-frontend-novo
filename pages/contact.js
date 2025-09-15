@@ -1,4 +1,4 @@
-import Footer from '../components/Footer'
+import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 export default function Contact() {
@@ -7,7 +7,7 @@ export default function Contact() {
       <Header />
       <main style={{ padding: "20px" }}>
         <h1>Contato</h1>
-        <p>Entre em contato conosco pelo e-mail: contato@violetafashion.com</p>
+        <p>Entre em contato conosco pelo formulário abaixo.</p>
       </main>
       <Footer />
     </>
