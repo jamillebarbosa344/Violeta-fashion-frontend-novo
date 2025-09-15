@@ -1,10 +1,9 @@
-/ components/Footer.js
 import './Footer.css';
 
-export default function Footer() {
+export default function Rodape() {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} Violeta Fashion</p>
+      <p>© {new Date().getFullYear()} Violeta Fashion. Todos os direitos reservados.</p>
     </footer>
   );
 }
