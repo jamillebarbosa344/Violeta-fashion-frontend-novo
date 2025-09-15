@@ -1,10 +1,8 @@
-import Layout from './components/Layout';
-
 export default function Checkout() {
   return (
-    <Layout>
+    <div style={{ textAlign: "center", padding: "40px" }}>
       <h1>Finalizar Compra</h1>
-      <p>Aqui você pode colocar informações de pagamento e envio.</p>
-    </Layout>
-  );
+      <p>Preencha seus dados para concluir o pedido.</p>
+    </div>
+  )
 }
