@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <Layout>
       <h1>Contato</h1>
-      <p>Aqui você pode colocar informações de contato.</p>
+      <p>Aqui você pode colocar informações de contato da loja.</p>
     </Layout>
   );
 }
