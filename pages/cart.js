@@ -1,10 +1,10 @@
 import Layout from '../components/Layout';
 
-export default function About() {
+export default function Cart() {
   return (
     <Layout>
-      <h1>Sobre Nós</h1>
-      <p>Aqui você pode falar sobre a loja Violeta Fashion.</p>
+      <h1>Carrinho</h1>
+      <p>Aqui você pode ver os produtos adicionados ao carrinho.</p>
     </Layout>
   );
 }
