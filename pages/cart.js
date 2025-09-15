@@ -1,10 +1,8 @@
-import Layout from './components/Layout';
-
 export default function Cart() {
   return (
-    <Layout>
+    <div style={{ textAlign: "center", padding: "40px" }}>
       <h1>Carrinho</h1>
-      <p>Aqui você pode ver os produtos adicionados ao carrinho.</p>
-    </Layout>
-  );
+      <p>Seu carrinho está vazio.</p>
+    </div>
+  )
 }
