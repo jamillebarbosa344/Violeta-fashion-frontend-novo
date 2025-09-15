@@ -1,32 +1,31 @@
-import Layout from '../components/Layout';
-import styles from './produtos.module.css';
+import Image from "next/image"
+import styles from "./produtos.module.css"
 
 export default function Produtos() {
+  const produtos = [
+    { id: 1, nome: "Produto 1", preco: "R$ 99,90", imagem: "/produtos/IMG_3925.jpg" },
+    { id: 2, nome: "Produto 2", preco: "R$ 149,90", imagem: "/produtos/IMG_3926.jpg" },
+    { id: 3, nome: "Produto 3", preco: "R$ 79,90", imagem: "/produtos/IMG_3927.jpg" },
+  ]
+
   return (
-    <Layout>
-      <div className={styles.container}>
-        <h1 className={styles.titulo}>Nossos Produtos</h1>
-        
-        <div className={styles.grid}>
-          <div className={styles.card}>
-            <img src="/produtos/IMG_3925.jpg" alt="Produto 1" />
-            <h2>Produto 1</h2>
-            <p>Descrição do produto 1</p>
+    <div className={styles.container}>
+      <h1>Nossos Produtos</h1>
+      <div className={styles.grid}>
+        {produtos.map((produto) => (
+          <div key={produto.id} className={styles.card}>
+            <Image
+              src={produto.imagem}
+              alt={produto.nome}
+              width={250}
+              height={300}
+              className={styles.img}
+            />
+            <h3>{produto.nome}</h3>
+            <p>{produto.preco}</p>
           </div>
-
-          <div className={styles.card}>
-            <img src="/produtos/IMG_3926.jpg" alt="Produto 2" />
-            <h2>Produto 2</h2>
-            <p>Descrição do produto 2</p>
-          </div>
-
-          <div className={styles.card}>
-            <img src="/produtos/IMG_3927.jpg" alt="Produto 3" />
-            <h2>Produto 3</h2>
-            <p>Descrição do produto 3</p>
-          </div>
-        </div>
+        ))}
       </div>
-    </Layout>
-  );
+    </div>
+  )
 }
